@@ -1,0 +1,14 @@
+:root {
+	--cubic-out: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.description-hider {
+	overflow: hidden;
+}
+
+@media (min-width: 600px) {
+	.project .project-description{
+		max-height: 0;
+		transition: max-height 0.3s var(--cubic-out);
+	}
+}
