@@ -4,10 +4,6 @@
 	background-color: #ffed9d;
 }
 
-/* .card {
-	margin-bottom: 2rem;
-} */
-
 .hero {
 	padding: 4rem 0;
 	text-align: center;
@@ -28,12 +24,6 @@
 	object-fit: cover;
 	border-radius: 50%;
 }
-
-@media (min-width: 600px) {
-	.container {
-	  width: 80%;
-	}
-  }
 
 .responsive-stack {
 	display: flex;

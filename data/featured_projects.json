@@ -2,15 +2,20 @@
     {
       "image": "img/placeholder.jpg",
       "title": "Awesome Feature",
-      "text": "This feature is amazing and helps you do awesome things.",
-      "link": "https://example.com/feature1",
+      "text": "This feature is amazing and helps you do awesome things. This is bad isnt it?",
+      "links": {
+        "github": "https://example.com/feature2",
+        "web": "https://example.com/feature2"
+      },
       "tags": ["cool", "new", "featured"]
     },
     {
       "image": "img/placeholder.jpg",
       "title": "Another Great Tool",
       "text": "Super useful and easy to use.",
-      "link": "https://example.com/feature2",
+      "links": {
+        "web": "https://example.com/feature2"
+      },
       "tags": ["tools", "popular"]
     }
   ]
