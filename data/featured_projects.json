@@ -1,21 +1,60 @@
 [
-    {
-      "image": "img/placeholder.jpg",
-      "title": "Awesome Feature",
-      "text": "This feature is amazing and helps you do awesome things. This is bad isnt it?",
-      "links": {
-        "github": "https://example.com/feature2",
-        "web": "https://example.com/feature2"
-      },
-      "tags": ["cool", "new", "featured"]
-    },
-    {
-      "image": "img/placeholder.jpg",
-      "title": "Another Great Tool",
-      "text": "Super useful and easy to use.",
-      "links": {
-        "web": "https://example.com/feature2"
-      },
-      "tags": ["tools", "popular"]
-    }
-  ]
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Awesome Feature",
+			"text": "This feature is amazing and helps you do awesome things. Is this text wrapping properly? I hope so I need a few mor words",
+			"links": {
+				"github": "https://example.com/feature2",
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["cool", "new", "featured"]
+		},
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Another Great Tool",
+			"text": "Super useful and easy to use.",
+			"links": {
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["tools", "popular"]
+		},
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Another Great Tool",
+			"text": "Super useful and easy to use.",
+			"links": {
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["tools", "popular"]
+		},
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Awesome Feature",
+			"text": "This feature is amazing and helps you do awesome things. This is bad isnt it?",
+			"links": {
+				"github": "https://example.com/feature2",
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["cool", "new", "featured"]
+		},
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Awesome Feature",
+			"text": "This feature is amazing and helps you do awesome things. This is bad isnt it?",
+			"links": {
+				"github": "https://example.com/feature2",
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["cool", "new", "featured"]
+		},
+		{
+			"image": "img/placeholder.jpg",
+			"title": "Awesome Feature",
+			"text": "This feature is amazing and helps you do awesome things. This is bad isnt it?",
+			"links": {
+				"github": "https://example.com/feature2",
+				"web": "https://example.com/feature2"
+			},
+			"tags": ["cool", "new", "featured"]
+		}
+	]

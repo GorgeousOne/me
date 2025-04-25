@@ -34,7 +34,7 @@ function load_feature_projects() {
 					<div class="project">
 						<img class="project-image" src="${project.image}" alt="${project.title}">
 						<div class="container hover-text">
-							<h3>${project.title}</h5>
+							<h5>${project.title}</h5>
 							<div>${tags}</div>
 							<div>${links}</div>
 							<p>${project.text}</p>

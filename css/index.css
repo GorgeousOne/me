@@ -20,13 +20,12 @@ main {
 	margin-top: 3rem;
 	padding: 2rem 0;
 	text-align: center;
-	/* background-color: #ffd972; */
 	background-color: #fde17e;
 }
 
 .avatar {
-	width: 15rem;
-	height: 15rem;
+	width: 20rem;
+	height: 20rem;
 	object-fit: cover;
 	border-radius: 50%;
 }

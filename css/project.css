@@ -4,18 +4,43 @@
 	--cubic-out: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.project-container:nth-child(3) {
-	margin-top: 15rem;
+.project-container {
+	max-width: 350px;
+}
+
+@media (min-width: 600px) {
+	.project-container:nth-child(3) {
+		margin-top: 15vw;
+	}
+}
+
+/* idk just random rotations for fun whatever */
+.project-box:nth-child(1) { transform: rotate(3deg); }
+.project-box:nth-child(2) { transform: rotate(-5deg); }
+.project-box:nth-child(3) { transform: rotate(7deg); }
+.project-box:nth-child(4) { transform: rotate(-2deg); }
+.project-box:nth-child(5) { transform: rotate(4deg); }
+
+.project-box {
+	transition: transform 0.3s ease;
+	margin-bottom: 15vw;
+	position: relative;
+}
+
+.project-box:hover {
+	transform: rotate(0deg) scale(1.05);
+	z-index: 10;
 }
 
 .project {
 	border-radius: 1rem;
-	filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .25));
+	filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.33));
 	background-color: white;
-	border: 1px solid grey;
 }
 
-.project img {
+.project > img {
+	width: 100%;
+	/* aspect-ratio: 1.78; */
 	aspect-ratio: 1.62;
 	object-fit: cover;
 	border-radius: 1rem;
@@ -27,23 +52,33 @@
 	top: 100%;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	transform: translateY(-10px);
+	background-color: #c9dcbd;
+	transform: translateY(-6rem);
 	opacity: 0;
 	transition: all 0.3s ease;
-	z-index: 10;
-	border-radius: 0 0 8px 8px;
+	border-radius: 0 0 1rem 1rem;
 }
 
-.project:hover {
-	border-radius: 1rem 1rem 0 0;
-}
 .project:hover .hover-text {
-	transform: translateY(0);
+	transform: translateY(-5rem);
 	opacity: 1;
 }
 
 .image-link {
 	margin: 0 !important;
+	overflow: visible;
+}
+
+.image-link img {
+	overflow: visible;
+}
+
+.project .tag {
+	border-color: var(--font-color);
+	color: var(--font-color);
+}
+@media(max-width:599px) {
+	.spacer-horz {
+		display: none;
+	}
 }
