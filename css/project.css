@@ -38,7 +38,7 @@
 	background-color: white;
 }
 
-.project > img {
+.project-cover {
 	width: 100%;
 	/* aspect-ratio: 1.78; */
 	aspect-ratio: 1.62;

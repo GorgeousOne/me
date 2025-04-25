@@ -32,7 +32,7 @@ function load_feature_projects() {
 			container.innerHTML += `
 				<div class="project-box">
 					<div class="project">
-						<img class="project-image" src="${project.image}" alt="${project.title}">
+						<img class="project-cover" src="${project.image}" alt="${project.title}">
 						<div class="container hover-text">
 							<h5>${project.title}</h5>
 							<div>${tags}</div>
