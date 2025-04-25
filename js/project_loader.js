@@ -16,49 +16,33 @@ function load_feature_projects() {
 
 	fetch('data/featured_projects.json')
 	.then(response => response.json())
-	.then(cards => {
-		const container = document.getElementById('projects-container');
+	.then(projects => {
+		const columns = document.getElementsByClassName('project-container');
+		let isOdd = false;
 
-		cards.forEach(card => {
-			const tags = card.tags.map(tag => `<span class="tag is-small">${tag}</span>`).join('');
-			const links = Object.entries(card.links).map(([type, link]) => `
+		console.log(columns)
+		projects.forEach(project => {
+			const container = columns[+isOdd];
+
+			const tags = project.tags.map(tag => `<span class="tag is-small">${tag}</span>`).join('');
+			const links = Object.entries(project.links).map(([type, link]) => `
 				<a href="${link}" class="button icon-only clear hide-pr image-link" title="Watch in Web" target="_blank">
 					<img src="${iconUrls[type]}" alt="link to .../">
 				</a>`).join('');
-
 			container.innerHTML += `
 				<div class="project-box">
-					<div class="col-6">
 					<div class="project">
-						<img class="project-image" src="${card.image}" alt="${card.title}">
-						<div class="project-body">
-						<h5>${card.title}</h5>
-						<div>${tags}</div>
-						<div>${links}</div>
-						<div class="description-hider">
-							<p class="project-description">${card.text}</p>
+						<img class="project-image" src="${project.image}" alt="${project.title}">
+						<div class="container hover-text">
+							<h3>${project.title}</h5>
+							<div>${tags}</div>
+							<div>${links}</div>
+							<p>${project.text}</p>
 						</div>
-					</div>
 					</div>
 				</div>
 			`;
-		});
-		if (!window.isMobile()) {
-			enableHoverDescriptionAnimation();
-		}
-	});
-}
-
-//manually compute the description fold animation distance because
-function enableHoverDescriptionAnimation() {
-	document.querySelectorAll(".project").forEach(project => {
-		const description = project.querySelector(".project-description");
-
-		project.addEventListener("mouseenter", () => {
-			description.style.maxHeight = description.scrollHeight + "px";
-		});
-		project.addEventListener("mouseleave", () => {
-			description.style.maxHeight = "0px";
+			isOdd = !isOdd;
 		});
 	});
 }
