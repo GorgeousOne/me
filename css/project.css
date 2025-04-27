@@ -10,7 +10,7 @@
 
 @media (min-width: 600px) {
 	.project-container:nth-child(3) {
-		margin-top: 15vw;
+		margin-top: 150px;
 	}
 }
 
@@ -23,7 +23,7 @@
 
 .project-box {
 	transition: transform 0.3s ease;
-	margin-bottom: 15vw;
+	margin-bottom: 150px;
 	position: relative;
 }
 
@@ -77,6 +77,7 @@
 	border-color: var(--font-color);
 	color: var(--font-color);
 }
+
 @media(max-width:599px) {
 	.spacer-horz {
 		display: none;
