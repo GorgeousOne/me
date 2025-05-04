@@ -5,7 +5,7 @@
 			"text": "Play the story of a gecko archeologist on the journey to find an ancient relic.",
 			"links": {
 				"web": "https://gorgeousone.itch.io/gecko-adventures",
-				"github": "https://github.com/GorgeousOne/Gecko-Adventures"
+				"GitHub": "https://github.com/GorgeousOne/Gecko-Adventures"
 			},
 			"tags": ["game", "unity", "2D", "platformer"]
 		},
@@ -15,7 +15,7 @@
 			"text": "A popular maze generator for the game Minecraft.",
 			"links": {
 				"web": "https://www.spigotmc.org/resources/tangled-maze-maze-generator.59284/",
-				"github": "https://github.com/GorgeousOne/Tangled-Maze-2"
+				"GitHub": "https://github.com/GorgeousOne/Tangled-Maze-2"
 			},
 			"tags": ["java", "plugin", "spigotmc"]
 		},
@@ -24,7 +24,7 @@
 			"title": "r/place Timelapse Viewer",
 			"text": "A program to get in depth visualizations of the social media event \"r/place\" of 2023.",
 			"links": {
-				"github": "https://github.com/GorgeousOne/r-place-2023-visualization"
+				"GitHub": "https://github.com/GorgeousOne/r-place-2023-visualization"
 			},
 			"tags": ["C++", "data visualization"]
 		},

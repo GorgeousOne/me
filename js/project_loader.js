@@ -11,7 +11,7 @@ addEventListener("load", (event) => load_feature_projects());
 function load_feature_projects() {
 	let iconUrls = {
 		web: "https://icongr.am/material/web.svg?size=20&color=000000",
-		github: "https://icongr.am/material/github.svg?size=20&color=000000"
+		GitHub: "https://icongr.am/material/github.svg?size=20&color=000000"
 	}
 
 	fetch('data/featured_projects.json')
@@ -26,7 +26,7 @@ function load_feature_projects() {
 
 			const tags = project.tags.map(tag => `<span class="tag is-small">${tag}</span>`).join('');
 			const links = Object.entries(project.links).map(([type, link]) => `
-				<a href="${link}" class="button icon-only clear hide-pr image-link" title="Watch in Web" target="_blank">
+				<a href="${link}" class="button icon-only clear hide-pr image-link" title="See on ${type}" target="_blank">
 					<img src="${iconUrls[type]}" alt="link to .../">
 				</a>`).join('');
 			container.innerHTML += `
